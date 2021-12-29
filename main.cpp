@@ -215,31 +215,6 @@ void keyboard(unsigned char key, int x, int y)
                 glutPostRedisplay();
                 break;
 
-                //buka pintu lemari kiri
-                case 'u':
-                lKiri=lKiri-5;
-                if (lKiri<-100) lKiri=-100;
-                glutPostRedisplay();
-                break;
-                //tutup pintu lemari kiri
-                case 'i':
-                lKiri=lKiri+5;
-                if (lKiri>0) lKiri=0;
-                glutPostRedisplay();
-                break;
-                //buka pintu lemari kanan
-                case 'o':
-                lKanan=lKanan+5;
-                if (lKanan<-100) lKanan=-100;
-                glutPostRedisplay();
-                break;
-                //tutup pintu lemari kanan
-                case 'p':
-                lKanan=lKanan-5;
-                if (lKanan<0) lKanan=0;
-                glutPostRedisplay();
-                break;
-
                 //putar arah jarum jam (menambah derajat putaran)
                 case '[':
                 xpos=xpos+5;
