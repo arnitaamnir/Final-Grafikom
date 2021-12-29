@@ -6,6 +6,7 @@
 #include <GL/glu.h>
 #include <GL/glut.h>
 #include <math.h>
+
  //memberikan fileheader yang dibutuhkan
 GLuint texture[35];
 
@@ -120,6 +121,7 @@ void kotak(float x1,float y1,float z1,float x2,float y2,float z2)
         glVertex3f(x2,y2,z1);
         glTexCoord2f(1.0, 0.0);
         glVertex3f(x1,y2,z1);
+
         //atas
         glTexCoord2f(0.0, 0.0);
         glVertex3f(x1,y2,z1);
@@ -138,6 +140,7 @@ void kotak(float x1,float y1,float z1,float x2,float y2,float z2)
         glVertex3f(x2,y1,z2);
         glTexCoord2f(1.0, 0.0);
         glVertex3f(x1,y1,z2);
+
         //bawah
         glTexCoord2f(0.0, 0.0);
         glVertex3f(x1,y1,z2);
@@ -147,6 +150,7 @@ void kotak(float x1,float y1,float z1,float x2,float y2,float z2)
         glVertex3f(x2,y1,z1);
         glTexCoord2f(0.0, 1.0);
         glVertex3f(x1,y1,z1);
+
         //samping kiri
         glTexCoord2f(0.0, 0.0);
         glVertex3f(x1,y1,z1);
@@ -156,6 +160,7 @@ void kotak(float x1,float y1,float z1,float x2,float y2,float z2)
         glVertex3f(x1,y2,z2);
         glTexCoord2f(0.0, 1.0);
         glVertex3f(x1,y1,z2);
+
         //samping kanan
         glTexCoord2f(0.0, 0.0);
         glVertex3f(x2,y1,z1);
