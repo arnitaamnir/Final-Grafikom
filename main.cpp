@@ -7,7 +7,7 @@
 #include <GL/glut.h>
 #include <math.h>
 
- //memberikan fileheader yang dibutuhkan
+ //memberikan fileheader yang dibutuhkan.
 GLuint texture[35];
 
 GLint slices = 35;
